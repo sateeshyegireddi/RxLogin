@@ -27,6 +27,16 @@ class LoginViewModel {
     //MARK: - Init
     init(_ user: User = User()) {
         self.user = user
+        self.updateModel()
+    }
+    
+    func updateModel() {
+        emailField.value
+            .bind { self.user.email = $0 }
+            .disposed(by: disposeBag)
+        passwordField.value.debug()
+            .bind { self.user.password = $0 }
+            .disposed(by: disposeBag)
     }
 }
 
@@ -42,6 +52,13 @@ extension LoginViewModel {
         .bind(to: isValidationSuccess)
         .disposed(by: disposeBag)
     }
+    
+//    func validateFields() {
+//        let fields = Observable.from([emailField, passwordField])
+//        fields.compactMap { $0.errorValue.value }
+//            .bind(to: errorMessage)
+//            .disposed(by: disposeBag)
+//    }
 }
 
 //MARK: - Network -

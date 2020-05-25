@@ -10,6 +10,9 @@
 		1D92046ED775B5304E93169A /* Pods_RxLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFCE3CCC742074E62B3B55E /* Pods_RxLoginUITests.framework */; };
 		464D891CE39D39D9D6967E6A /* Pods_RxLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4639B696AE9BB6CD075A5A32 /* Pods_RxLoginTests.framework */; };
 		9FFCAAED8825E13E6932DC8B /* Pods_RxLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D8C7689829A2254AAE3AD7 /* Pods_RxLogin.framework */; };
+		F98BCAA3247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */; };
+		F98BCAA4247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */; };
+		F98BCAA5247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */; };
 		F99B85C024792C64006BB578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B85BF24792C64006BB578 /* AppDelegate.swift */; };
 		F99B85C224792C64006BB578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B85C124792C64006BB578 /* SceneDelegate.swift */; };
 		F99B85C424792C64006BB578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B85C324792C64006BB578 /* ViewController.swift */; };
@@ -61,6 +64,7 @@
 		9F91C265CFCB189A2A97B274 /* Pods-RxLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLogin.release.xcconfig"; path = "Target Support Files/Pods-RxLogin/Pods-RxLogin.release.xcconfig"; sourceTree = "<group>"; };
 		AD9E3D391B8412B127CE434E /* Pods-RxLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-RxLoginUITests/Pods-RxLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D0E1CC3FFA3E234518669643 /* Pods-RxLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLogin.debug.xcconfig"; path = "Target Support Files/Pods-RxLogin/Pods-RxLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+ViewController.swift"; sourceTree = "<group>"; };
 		F99B85BC24792C64006BB578 /* RxLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B85BF24792C64006BB578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F99B85C124792C64006BB578 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				F99B85C324792C64006BB578 /* ViewController.swift */,
 				F99B85FC24793A36006BB578 /* User.swift */,
 				F99B860024793DF5006BB578 /* LoginViewModel.swift */,
+				F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */,
 				F99B85FB24793A1C006BB578 /* Field */,
 				F99B85C524792C64006BB578 /* Main.storyboard */,
 				F99B85C824792C65006BB578 /* Assets.xcassets */,
@@ -430,6 +435,7 @@
 				F99B85F024792F67006BB578 /* FieldValidatable.swift in Sources */,
 				F99B85C224792C64006BB578 /* SceneDelegate.swift in Sources */,
 				F99B85FD24793A36006BB578 /* User.swift in Sources */,
+				F98BCAA3247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +448,7 @@
 				F99B860224793DF5006BB578 /* LoginViewModel.swift in Sources */,
 				F99B85D724792C65006BB578 /* RxLoginTests.swift in Sources */,
 				F99B85FE24793A36006BB578 /* User.swift in Sources */,
+				F98BCAA4247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */,
 				F99B85F524793001006BB578 /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +462,7 @@
 				F99B860324793DF5006BB578 /* LoginViewModel.swift in Sources */,
 				F99B85E224792C65006BB578 /* RxLoginUITests.swift in Sources */,
 				F99B85FF24793A36006BB578 /* User.swift in Sources */,
+				F98BCAA5247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */,
 				F99B85F624793001006BB578 /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

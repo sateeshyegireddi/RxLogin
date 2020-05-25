@@ -44,6 +44,20 @@ extension ViewController {
              to: passwordTextField,
              error: loginViewModel.passwordField.errorValue,
              to: passwordErrorLabel)
+        
+        loginViewModel.isValidationSuccess
+            .bind(to: loginButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+        
+//        loginViewModel.errorMessage.bind { error in
+//            self.showAlert(title: "RxLogin",
+//                           message: error,
+//                           style: .alert,
+//                           actions: [.action(title: "OK")])
+//                .subscribe(onNext: { index in
+//                    print("OK Button Tapped!")
+//                }).disposed(by: disposeBag)
+//        }.disposed(by: disposeBag)
     }
     
     func bind(text: BehaviorRelay<String>,
