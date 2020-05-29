@@ -38,9 +38,3 @@ extension FieldValidatable {
         return value == anotherValue
     }
 }
-
-//MARK: - Secure Field -
-
-protocol SecureFieldValidatable {
-    var isSecure: Bool { get }
-}

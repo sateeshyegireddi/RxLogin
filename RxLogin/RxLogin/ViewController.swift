@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxKeyboard
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailErrorLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var passwordErrorLabel : UILabel!
+    @IBOutlet weak var passwordErrorLabel: UILabel!
+    @IBOutlet weak var backgroundScrollView: UIScrollView!
     @IBOutlet weak var loginButton: UIButton!
     
     //MARK: - Properties
@@ -49,6 +51,24 @@ extension ViewController {
             .bind(to: loginButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
+        loginButton.rx.tap
+            .subscribe(onNext: { _ in
+                self.view.endEditing(true)
+                self.loginViewModel.login()
+            })
+            .disposed(by: disposeBag)
+        
+        emailTextField
+            .invoke(next: passwordTextField)
+            .disposed(by: disposeBag)
+        
+        RxKeyboard.instance.visibleHeight
+            .drive(onNext: { keyboardVisibleHeight in
+                self.backgroundScrollView.contentInset.bottom = keyboardVisibleHeight
+            })
+            .disposed(by: disposeBag)
+        
+
 //        loginViewModel.errorMessage.bind { error in
 //            self.showAlert(title: "RxLogin",
 //                           message: error,
@@ -70,7 +90,7 @@ extension ViewController {
             .disposed(by: disposeBag)
         field.rx.text
             .map { ($0 ?? "").count <= 0 }
-            .bind(to: label.rx.isHidden )
+            .bind(to: label.rx.isHidden)
             .disposed(by: disposeBag)
         error.bind(to: label.rx.text)
             .disposed(by: disposeBag)

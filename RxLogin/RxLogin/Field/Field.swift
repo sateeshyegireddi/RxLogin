@@ -10,17 +10,15 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-struct Field: FieldValidatable, SecureFieldValidatable {
+struct Field: FieldValidatable {
     var type: FieldType
     private(set) var title: String = ""
     private(set) var errorMessage: String = ""
-    private(set) var isSecure: Bool = false
     var value: BehaviorRelay<String> = BehaviorRelay(value: "")
     var errorValue: BehaviorRelay<String?> = BehaviorRelay(value: nil)
     
-    init(of type: FieldType, isSecure: Bool = false) {
+    init(of type: FieldType) {
         self.type = type
-        self.isSecure = isSecure
         self.title = type.title
         self.errorMessage = type.errorMessage
     }

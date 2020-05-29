@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1D92046ED775B5304E93169A /* Pods_RxLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFCE3CCC742074E62B3B55E /* Pods_RxLoginUITests.framework */; };
 		464D891CE39D39D9D6967E6A /* Pods_RxLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4639B696AE9BB6CD075A5A32 /* Pods_RxLoginTests.framework */; };
+		6450A2F2247EB89200BC6BEC /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6450A2F1247EB89200BC6BEC /* UITextField+Rx.swift */; };
+		6450A2F3247EB89200BC6BEC /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6450A2F1247EB89200BC6BEC /* UITextField+Rx.swift */; };
+		6450A2F4247EB89200BC6BEC /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6450A2F1247EB89200BC6BEC /* UITextField+Rx.swift */; };
 		9FFCAAED8825E13E6932DC8B /* Pods_RxLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D8C7689829A2254AAE3AD7 /* Pods_RxLogin.framework */; };
 		F98BCAA3247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */; };
 		F98BCAA4247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */; };
@@ -60,6 +63,7 @@
 		3CC9FCF3132FAE0C304481B4 /* Pods-RxLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLoginUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxLoginUITests/Pods-RxLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		422F419C76A7880344A85B8D /* Pods-RxLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-RxLoginTests/Pods-RxLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4639B696AE9BB6CD075A5A32 /* Pods_RxLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6450A2F1247EB89200BC6BEC /* UITextField+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Rx.swift"; sourceTree = "<group>"; };
 		94D8C7689829A2254AAE3AD7 /* Pods_RxLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F91C265CFCB189A2A97B274 /* Pods-RxLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLogin.release.xcconfig"; path = "Target Support Files/Pods-RxLogin/Pods-RxLogin.release.xcconfig"; sourceTree = "<group>"; };
 		AD9E3D391B8412B127CE434E /* Pods-RxLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLoginUITests.release.xcconfig"; path = "Target Support Files/Pods-RxLoginUITests/Pods-RxLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				F99B85FC24793A36006BB578 /* User.swift */,
 				F99B860024793DF5006BB578 /* LoginViewModel.swift */,
 				F98BCAA2247BEEFA00FBED26 /* UIAlert+ViewController.swift */,
+				6450A2F1247EB89200BC6BEC /* UITextField+Rx.swift */,
 				F99B85FB24793A1C006BB578 /* Field */,
 				F99B85C524792C64006BB578 /* Main.storyboard */,
 				F99B85C824792C65006BB578 /* Assets.xcassets */,
@@ -430,6 +435,7 @@
 				F99B85F424793001006BB578 /* Field.swift in Sources */,
 				F99B85C424792C64006BB578 /* ViewController.swift in Sources */,
 				F99B85F8247931EB006BB578 /* FieldType.swift in Sources */,
+				6450A2F2247EB89200BC6BEC /* UITextField+Rx.swift in Sources */,
 				F99B85C024792C64006BB578 /* AppDelegate.swift in Sources */,
 				F99B860124793DF5006BB578 /* LoginViewModel.swift in Sources */,
 				F99B85F024792F67006BB578 /* FieldValidatable.swift in Sources */,
@@ -446,6 +452,7 @@
 				F99B85F9247931EB006BB578 /* FieldType.swift in Sources */,
 				F99B85F124792F67006BB578 /* FieldValidatable.swift in Sources */,
 				F99B860224793DF5006BB578 /* LoginViewModel.swift in Sources */,
+				6450A2F3247EB89200BC6BEC /* UITextField+Rx.swift in Sources */,
 				F99B85D724792C65006BB578 /* RxLoginTests.swift in Sources */,
 				F99B85FE24793A36006BB578 /* User.swift in Sources */,
 				F98BCAA4247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */,
@@ -460,6 +467,7 @@
 				F99B85FA247931EB006BB578 /* FieldType.swift in Sources */,
 				F99B85F224792F67006BB578 /* FieldValidatable.swift in Sources */,
 				F99B860324793DF5006BB578 /* LoginViewModel.swift in Sources */,
+				6450A2F4247EB89200BC6BEC /* UITextField+Rx.swift in Sources */,
 				F99B85E224792C65006BB578 /* RxLoginUITests.swift in Sources */,
 				F99B85FF24793A36006BB578 /* User.swift in Sources */,
 				F98BCAA5247BEEFA00FBED26 /* UIAlert+ViewController.swift in Sources */,

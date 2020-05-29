@@ -15,7 +15,7 @@ class LoginViewModel {
     // MARK: - Properties
     var user = User()
     var emailField = Field(of: .email)
-    var passwordField = Field(of: .password, isSecure: true)
+    var passwordField = Field(of: .password)
     
     // MARK: - RX Properties
     let isLoading = BehaviorRelay(value: false)
@@ -34,7 +34,7 @@ class LoginViewModel {
         emailField.value
             .bind { self.user.email = $0 }
             .disposed(by: disposeBag)
-        passwordField.value.debug()
+        passwordField.value
             .bind { self.user.password = $0 }
             .disposed(by: disposeBag)
     }
